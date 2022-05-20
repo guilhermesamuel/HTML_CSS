@@ -12,7 +12,14 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
+        caption
+    {
+        font-weight: bold;
+        font-size: 1.3em;
+        background-color: lightgrey;
+    }
         td, th{
             border: 1px solid black;
            
@@ -21,6 +28,15 @@
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+        thead> tr > th{
+            position: sticky;
+            top: 0;
+            background-color: gray;
+            
+        }
+        tbody>tr:nth-child(odd){
+            background-color: lightgrey;
         }
     </style>
 </head>
@@ -33,10 +49,13 @@
         tfoot
     -->
     <table>
+        <caption>
+            Populaçãodas unidades federativas
+        </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th><!--header usa th, pq th é título-->
+                <th scope="col">Estado</th>
+                <th scope="col">População</th><!--header usa th, pq th é título-->
             </tr>
         </thead>
         <tbody>
@@ -52,13 +71,79 @@
                 <td>Rio de Janeiro</td>
                 <td> 17 264 943</td>
             </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 160 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td> 17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 160 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td> 17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 160 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td> 17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 160 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td> 17 264 943</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 160 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td> 17 264 943</td>
+            </tr>
 
         </tbody>
         <tfoot>
-            <tr> <th>Total de Habitantes</th>
+            <tr> <th scope="row">Total de Habitantes</th>
             <td>000000</td></tr>
 
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, tenetur quam. Ipsam id nam voluptates ipsum! Saepe debitis consequatur sequi laborum aliquid, nesciunt expedita praesentium at quis quos officiis doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores expedita repudiandae odio aliquam. Pariatur inventore dicta rem ex, eum saepe magnam necessitatibus eligendi aut recusandae sunt sint at quisquam. Inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptatum minus atque sed voluptas esse doloribus ipsa earum magni incidunt inventore dolor? Doloribus incidunt ipsa obcaecati repellendus, officiis ullam dicta. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi atque porro iste reiciendis. Quia molestiae deleniti impedit blanditiis iure dolorum iusto quasi, distinctio natus, commodi ex dolores consectetur laudantium ut? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus recusandae est voluptatibus, quo nam a vel quibusdam optio. Commodi unde aliquid aspernatur quo asperiores corporis eos magnam vitae, molestias expedita.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, tenetur quam. Ipsam id nam voluptates ipsum! Saepe debitis consequatur sequi laborum aliquid, nesciunt expedita praesentium at quis quos officiis doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores expedita repudiandae odio aliquam. Pariatur inventore dicta rem ex, eum saepe magnam necessitatibus eligendi aut recusandae sunt sint at quisquam. Inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptatum minus atque sed voluptas esse doloribus ipsa earum magni incidunt inventore dolor? Doloribus incidunt ipsa obcaecati repellendus, officiis ullam dicta. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi atque porro iste reiciendis. Quia molestiae deleniti impedit blanditiis iure dolorum iusto quasi, distinctio natus, commodi ex dolores consectetur laudantium ut? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus recusandae est voluptatibus, quo nam a vel quibusdam optio. Commodi unde aliquid aspernatur quo asperiores corporis eos magnam vitae, molestias expedita.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, tenetur quam. Ipsam id nam voluptates ipsum! Saepe debitis consequatur sequi laborum aliquid, nesciunt expedita praesentium at quis quos officiis doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores expedita repudiandae odio aliquam. Pariatur inventore dicta rem ex, eum saepe magnam necessitatibus eligendi aut recusandae sunt sint at quisquam. Inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptatum minus atque sed voluptas esse doloribus ipsa earum magni incidunt inventore dolor? Doloribus incidunt ipsa obcaecati repellendus, officiis ullam dicta. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi atque porro iste reiciendis. Quia molestiae deleniti impedit blanditiis iure dolorum iusto quasi, distinctio natus, commodi ex dolores consectetur laudantium ut? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus recusandae est voluptatibus, quo nam a vel quibusdam optio. Commodi unde aliquid aspernatur quo asperiores corporis eos magnam vitae, molestias expedita.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, tenetur quam. Ipsam id nam voluptates ipsum! Saepe debitis consequatur sequi laborum aliquid, nesciunt expedita praesentium at quis quos officiis doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores expedita repudiandae odio aliquam. Pariatur inventore dicta rem ex, eum saepe magnam necessitatibus eligendi aut recusandae sunt sint at quisquam. Inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptatum minus atque sed voluptas esse doloribus ipsa earum magni incidunt inventore dolor? Doloribus incidunt ipsa obcaecati repellendus, officiis ullam dicta. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi atque porro iste reiciendis. Quia molestiae deleniti impedit blanditiis iure dolorum iusto quasi, distinctio natus, commodi ex dolores consectetur laudantium ut? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus recusandae est voluptatibus, quo nam a vel quibusdam optio. Commodi unde aliquid aspernatur quo asperiores corporis eos magnam vitae, molestias expedita.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, tenetur quam. Ipsam id nam voluptates ipsum! Saepe debitis consequatur sequi laborum aliquid, nesciunt expedita praesentium at quis quos officiis doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores expedita repudiandae odio aliquam. Pariatur inventore dicta rem ex, eum saepe magnam necessitatibus eligendi aut recusandae sunt sint at quisquam. Inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptatum minus atque sed voluptas esse doloribus ipsa earum magni incidunt inventore dolor? Doloribus incidunt ipsa obcaecati repellendus, officiis ullam dicta. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi atque porro iste reiciendis. Quia molestiae deleniti impedit blanditiis iure dolorum iusto quasi, distinctio natus, commodi ex dolores consectetur laudantium ut? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus recusandae est voluptatibus, quo nam a vel quibusdam optio. Commodi unde aliquid aspernatur quo asperiores corporis eos magnam vitae, molestias expedita.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, tenetur quam. Ipsam id nam voluptates ipsum! Saepe debitis consequatur sequi laborum aliquid, nesciunt expedita praesentium at quis quos officiis doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores expedita repudiandae odio aliquam. Pariatur inventore dicta rem ex, eum saepe magnam necessitatibus eligendi aut recusandae sunt sint at quisquam. Inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptatum minus atque sed voluptas esse doloribus ipsa earum magni incidunt inventore dolor? Doloribus incidunt ipsa obcaecati repellendus, officiis ullam dicta. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi atque porro iste reiciendis. Quia molestiae deleniti impedit blanditiis iure dolorum iusto quasi, distinctio natus, commodi ex dolores consectetur laudantium ut? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus recusandae est voluptatibus, quo nam a vel quibusdam optio. Commodi unde aliquid aspernatur quo asperiores corporis eos magnam vitae, molestias expedita.</p>
 </body>
 </html>

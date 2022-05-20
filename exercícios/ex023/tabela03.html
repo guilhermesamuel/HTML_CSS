@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, lightyellow, aqua, lightblue, lightgreen);
+        }
+        caption{
+            font-size: 2em;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.415);
+            color: white;
+
+        }
+        table{
+            width: 700px;
+            height: 400px;
+            padding: 20px;
+            margin: auto;
+            position: relative;
+            border-collapse: collapse;
+            
+        }
+        table>tr>th,td{
+            background-color: white;
+            text-decoration: underline;
+            color: gold;
+        }
+        thead, tfoot{
+            background-color: darkgoldenrod;
+        }
+        thead>tr>th{
+            position: sticky;
+            top: 0;
+            background-color: darkgoldenrod;
+        }
+        td, th{
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+
+       
+    
+   
+    <table>
+        <caption> Como eu amo meu irmão</caption>
+        <thead>
+            <tr>
+                <th scope="col"> Qualidades do davi</th>
+                <th scope="col">Defeitos do davi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Ele é forte</td>
+                <td> Ele é chato</td>
+            </tr>
+            <tr>
+                <td>Ele é bonito</td>
+                <td>Se não abrir a boca</td>
+
+            </tr>
+            <tr>
+                <td> Ele é engraçado</td>
+                <td>Mas tá um viboro</td>
+
+            </tr>
+            <tr>
+                <td> Ele é esperto</td>
+                <td>Mas não presta atenção</td>
+
+            </tr>
+            <tr>
+                <td>Ele é criativo</td>
+                <td>Mas briguento</td>
+            </tr>
+            <tr>
+                <td>Sabe ajudar</td>
+                <td>Mas se faz de bobo</td>
+
+            </tr>
+            <tr>
+                <td>É incrivel</td>
+                <td>Mas meio fresco</td>
+
+            </tr>
+            <tr>
+                <td>Ele é o melhor irmão do mundo</td>
+
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr><th scope="row"> Quanto eu o amo</th><th>infinito</th></tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
